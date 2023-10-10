@@ -172,9 +172,9 @@ header {
     background-size: cover;
 }
 
-.signup .form-details {
+.form-box .form-details {
     padding: 0 20px;
-    background: url("images/signup-img.jpg");
+    background: url("images/form-box-img.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -269,22 +269,18 @@ form button:hover {
     text-align: center;
 }
 
-.form-popup .signup,
-.form-popup.show-signup .login {
-    display: none;
-}
 
-.form-popup.show-signup .signup {
+.form-popup {
     display: flex;
 }
 
-.signup .policy-text {
+ .policy-text {
     display: flex;
     margin-top: 14px;
     align-items: center;
 }
 
-.signup .policy-text input {
+ .policy-text input {
     width: 14px;
     height: 14px;
     margin-right: 7px;
