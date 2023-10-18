@@ -9,9 +9,12 @@ from pygame.locals import (
     K_LEFT,
     K_RIGHT,
     K_ESCAPE,
-    KEYDOWN,
+    KEY_DOWN,
     QUIT,
 )
 
 # Initialize pygame
 pygame.init()
+
+
+
