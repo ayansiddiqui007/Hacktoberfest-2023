@@ -1,0 +1,109 @@
+body
+{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    background-color: #c4b7d8;
+}
+main
+{
+    background: url(./bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main h1
+{
+    font-size: 50px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main p
+{
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+section
+{
+    position: relative;
+    top: 100vh;
+    width: 100%;
+    padding: auto;
+    margin: auto;
+    align-items: center;
+}
+section form
+{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section form table .categories
+{
+    font-size: 20px;
+    padding-top: 15px;
+    padding-right: 30px;
+    margin: 10px;
+}
+section form table{
+    width: 80%;
+    /* position: relative; */
+    /* display: block; */
+}
+section form table td{
+    text-align: center;
+}
+section form table input{
+    width: 85%;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: #c4b7d8;
+    font-family: 'Ubuntu', sans-serif;
+}
+section form table input:focus{
+    outline: none;
+    /* border-bottom: 1px solid black; */
+}
+section form table select{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: #c4b7d8;
+    font-family: 'Ubuntu', sans-serif;
+}
+section form table select:focus{
+    outline: none;
+}
+section .submit{
+    display: block;
+    align-items: center;
+    text-align: center;
+    /* margin: auto;
+    margin-top: 40px; */
+    padding: 10px;
+    width: 20%;
+    border: 0;
+    background-color: #9987dd;
+    border-radius: 20px;
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    transition-duration: 0.25s;
+}
+section .submit:hover{
+    background-color: #c4b7d8;
+    /* font-size: 20px; */
+    transform: scale(1.5);
+    cursor: pointer;
+}
