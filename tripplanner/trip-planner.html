@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="proj-1.css">
+
+    <title>Trip Planner</title>
+
+</head>
+<body>
+    
+    <main class="banner">
+      <!-- <img src="./bg-img.jpg" style="width: 100%; opacity: 0.7;"> -->
+      <h1>Trip Planner</h1><br>
+      <p>
+        Plan your trips here and make them memorable
+      </p><br>
+    </main>
+    <section>
+      <form action="connect.php" method="post">
+        <table>
+          <tr>
+            <td class="categories">Name:</td>
+            <td><input type="text" name="name" required placeholder="Username"></td>
+          </tr>
+          <tr>
+            <td class="categories">Phone number:</td>
+            <td>
+             <select name="phoneCode" required>
+              <option selected value="91">+91</option>
+              <option value="44">+44</option>
+              <option value="1">+1</option>
+              <option value="52">+52</option>
+              <option value="86">+86</option>
+             </select>
+             <input type="phone" name="phone" required placeholder="00000 00000">
+            </td>
+           </tr>
+          <tr>
+            <td class="categories">E-mail:</td>
+            <td><input type="email" name="email" required></td>
+          </tr>
+          <tr>
+            <td class="categories">Age:</td>
+            <td><input type="number" name="age" required></td>
+          </tr>
+          <tr>
+            <td class="categories">Gender:</td>
+            <td>
+              <select name="gender" required style="width: 90%;">
+                <option value="" selected hidden>Select Option</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="categories">Select Destination:</td>
+            <td>
+              <select name="city" required style="width: 90%;">
+                <option value="" selected hidden>Select Option</option>
+                <option value="Delhi">New Delhi</option>
+                <option value="Goa">Goa</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Agra">Agra</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Shimla">Shimla</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Manali">Manali</option>
+                <option value="Rishikesh">Rishikesh</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Varanasi">Varanasi</option>
+                <option value="Udaipur">Udaipur</option>
+                <option value="Kochi">Kochi</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Hampi">Hampi</option>
+                <option value="Jodhpur">Jodhpur</option>
+                <option value="Mysuru">Mysuru</option>
+                <option value="Ooty">Ooty</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Pune">Pune</option>
+                <option value="Srinagar">Srinagar</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="categories">Number of people:</td>
+            <td><input type="number" name="people" required></td>
+          </tr>
+          <tr>
+            <td class="categories">Trip start date:</td>
+            <td><input type="date" name="startdate" required></td>
+          </tr>
+        </table><br><br><br><br><br><br><br>
+        <input type="submit" value="Submit" name="submit" class="submit">
+      </form>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          $('.banner').css('opacity', 1-
+          $(window).scrollTop()/450)
+        })
+      })
+    </script>
+    
+</body>
+</html>
